@@ -1,14 +1,20 @@
+[简体中文](#简体中文) | [English](#english)
+
 <div align="center">
 
-# GitHub Open Links in New Tab
+# GitHub 新标签页打开
 
-为 GitHub 添加“链接在新标签页打开”的功能，可一键切换 **新标签页 / 当前页** 打开方式，适配 GitHub 动态页面。
+<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="120" alt="GitHub Logo" />
 
-[简体中文](#简体中文) | [English](#english)
+**为 GitHub 添加新标签页打开功能**
+
+一个优雅的浏览器脚本，让 GitHub 链接默认在新标签页中打开，提升浏览体验。
 
 ![Stars](https://img.shields.io/github/stars/oyj135/github-newtab-links-reborn?style=flat-square)
 ![License](https://img.shields.io/github/license/oyj135/github-newtab-links-reborn?style=flat-square)
 ![Tampermonkey](https://img.shields.io/badge/Tampermonkey-Script-00a2ff?style=flat-square)
+
+</div>
 
 ---
 
