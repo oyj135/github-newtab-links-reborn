@@ -65,10 +65,7 @@
 #### 1) Tampermonkey 显示“此脚本未被执行”
 - 打开扩展管理
 - 找到 Tampermonkey → 点“详细信息”
-- 找到“网站访问权限 / Site access”
-  - 选“在所有网站上”
-  - 或选“在特定网站上”，然后把 `https://github.com/*` 加进去
-- 回到 GitHub 页面，强制刷新（Ctrl+F5），再看 Tampermonkey 图标里是否还提示“未被执行”
+- 开启 允许运行用户脚本
 
 #### 2) 为什么 Ctrl/⌘ 点击还是原来的行为？
 这是刻意保留的：按住 Ctrl/⌘、中键点击等属于浏览器常用操作，不建议脚本篡改。
@@ -129,10 +126,7 @@ This usually means Tampermonkey is not allowed to run on `github.com`.
 
 - Open the extensions page
 - Find Tampermonkey → open Details
-- Find “Site access”
-  - Choose “On all sites”
-  - Or choose “On specific sites” and add `https://github.com/*`
-- Go back to GitHub and hard refresh (Ctrl+F5), then check again
+- Enable “Allow user scripts”
 
 #### 2) Why does Ctrl/⌘ click still behave normally?
 
