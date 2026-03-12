@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         GitHub 链接新标签页打开
 // @namespace    http://tampermonkey.net/
-// @version      6.2.0
+// @version      6.3.0
 // @description  拦截点击实现 GitHub 链接新标签页/当前页打开；右侧单图标把手，悬浮展开左侧弹窗（不会移开就消失，可正常切换）。
 // @match        https://github.com/*
 // @run-at       document-start
@@ -40,11 +40,13 @@
     // 纯锚点（仅 # 或 #xxx）：当前页内跳转，不新开标签
     if (href.startsWith('#')) return true;
 
-    // 同页锚点：目标 URL 与当前页同 origin、同 path，仅 hash 不同 → 不新开标签（如 README 里「简体中文 | English」）
+    const normalizePath = (p) => (p || '').replace(/\/+$/, '');
+
+    // 同页锚点：目标 URL 与当前页同 origin、同 path（忽略尾部 /），仅 hash 不同 → 不新开标签（如 README 里「简体中文 | English」）
     try {
       const u = new URL(a.href);
       const cur = window.location;
-      if (u.origin === cur.origin && u.pathname === cur.pathname) return true;
+      if (u.origin === cur.origin && normalizePath(u.pathname) === normalizePath(cur.pathname)) return true;
     } catch (_) {}
 
     return false;
