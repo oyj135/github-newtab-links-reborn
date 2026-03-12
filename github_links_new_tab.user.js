@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         GitHub 链接新标签页打开
 // @namespace    http://tampermonkey.net/
-// @version      6.1.0
+// @version      6.2.0
 // @description  拦截点击实现 GitHub 链接新标签页/当前页打开；右侧单图标把手，悬浮展开左侧弹窗（不会移开就消失，可正常切换）。
 // @match        https://github.com/*
 // @run-at       document-start
