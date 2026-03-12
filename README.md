@@ -72,7 +72,7 @@
 
 ---
 
-## [简体中文](#简体中文) | [English](#english)
+## English
 
 Add an “open links in a new tab” feature to GitHub. You can switch between **New Tab / Same Tab** modes at any time, designed to work well with GitHub’s dynamic (SPA) pages.
 
