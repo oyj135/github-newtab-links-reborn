@@ -8,11 +8,11 @@
 
 **为 GitHub 添加新标签页打开功能**
 
-一个优雅的浏览器脚本，让 GitHub 链接默认在新标签页中打开，提升浏览体验。
+让 GitHub 链接默认在新标签页中打开，兼顾体验与效率。
 
-![Stars](https://img.shields.io/github/stars/oyj135/github-newtab-links-reborn?style=flat-square)
-![License](https://img.shields.io/github/license/oyj135/github-newtab-links-reborn?style=flat-square)
-![Tampermonkey](https://img.shields.io/badge/Tampermonkey-Script-00a2ff?style=flat-square)
+![Stars](https://img.shields.io/github/stars/oyj135/github-newtab-links-reborn?style=flat-square&color=ffb300)
+![License](https://img.shields.io/github/license/oyj135/github-newtab-links-reborn?style=flat-square&color=4caf50)
+![Tampermonkey](https://img.shields.io/badge/Tampermonkey-Script-7e57c2?style=flat-square)
 
 </div>
 
@@ -72,7 +72,7 @@
 
 ---
 
-## English
+## [简体中文](#简体中文) | [English](#english)
 
 Add an “open links in a new tab” feature to GitHub. You can switch between **New Tab / Same Tab** modes at any time, designed to work well with GitHub’s dynamic (SPA) pages.
 
