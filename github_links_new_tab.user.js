@@ -31,11 +31,21 @@
     if (!a) return true;
 
     const href = a.getAttribute('href');
-    if (!href || href.startsWith('#') || href.startsWith('javascript:')) return true;
+    if (!href || href.startsWith('javascript:')) return true;
     if (a.hasAttribute('download')) return true;
 
     const role = a.getAttribute('role');
     if (role === 'button') return true;
+
+    // 纯锚点（仅 # 或 #xxx）：当前页内跳转，不新开标签
+    if (href.startsWith('#')) return true;
+
+    // 同页锚点：目标 URL 与当前页同 origin、同 path，仅 hash 不同 → 不新开标签（如 README 里「简体中文 | English」）
+    try {
+      const u = new URL(a.href);
+      const cur = window.location;
+      if (u.origin === cur.origin && u.pathname === cur.pathname) return true;
+    } catch (_) {}
 
     return false;
   };
